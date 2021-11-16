@@ -35,7 +35,7 @@ export default function Sidebar() {
             <Link to="/products" className="link">
               <li className="sidebarListItem">
                 <Storefront className="sidebarIcon" />
-                Add Patient
+                Add New Patient
               </li>
             </Link>
           </ul>

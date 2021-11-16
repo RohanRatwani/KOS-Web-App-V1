@@ -1,0 +1,18 @@
+ *{
+    margin:0;
+    padding:0;
+  }
+  /* * {
+    box-sizing: border-box;
+  } */
+  
+  html,
+  body,
+  #root,
+  #root > div,
+  div[data-reactroot] {
+  
+    /* height: 100% !important; */
+    position:relative;
+    width: 100% !important;
+  } 

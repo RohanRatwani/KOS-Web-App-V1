@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ecf1f3;
+    /* display: flex; */
+    /* min-height: 100vh; */
+ 
+}
+
+.title {
+    text-align: center;
+    color: rgb(170, 80, 80);
+    font-size: 30px;
+    font-family: Roboto,sans-serif;
+}
+
+.logo {
+    display: block;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 130px;
+    height: 130px;
+}
+
+.log{
+text-align: center;
+}
+.container1 {
+    background-color: rgb(255, 255, 255);
+    height: 340px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+     position: relative; 
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow: none;
+}
+/* 
+.container{
+    position: relative;
+} */
+.btn-ctn {
+    margin: 0;
+     position: absolute; 
+    top: 55%;
+    transform: translateY(40%);
+    padding-left: 190px;
+}
+
+.hospital {
+    position: absolute;
+    top: 20%;
+    transform: translateY(30%);
+    border-top: none;
+    border-bottom: 0.5px solid black;
+    border-left: none;
+    border-right: none;
+    font-size: 20px;
+    width: 80%; 
+    color: #862020;
+    outline: none;
+}
+
+.password {
+    position: relative;
+    top: 40%;
+    transform: translateY(30%);
+    border-top: none;
+    border-bottom: 0.5px solid black;
+    border-left: none;
+    border-right: none;
+    font-size: 20px;
+    width: 80%;
+    color: #c1c1c1;
+    outline: none;
+
+}
+
+.btn {
+    background-color: #2976BB;
+    color: white;
+    font-size: 20px;
+    padding: 13px 20px;
+    border: none;
+    cursor: pointer;
+    width: 130%;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/* login links */
+
+.forgot-password{
+  font-size: 15px;
+  padding-top: 240px;
+  padding-left: 100px;
+  color: #7f7d7d;
+  display: flex;
+}
+
+.forgot-password1
+ {
+  font-size: 15px;
+  padding-top: 130px;
+  padding-top: 240px;
+  padding-right: 100px;
+  color: #7f7d7d;
+  display: flex;
+}
+.forgot-password a {
+  color: #aaadab;
+  text-decoration: none;
+}
+.forgot-password a:hover {
+    color: #0f1de0;
+    text-decoration: none;
+}
+
+.forgot-password1 a {
+    color: #aaadab;
+    text-decoration: none;
+}
+.forgot-password1 a:hover {
+    color: #0f1de0;
+    text-decoration: none;
+  }
+
+
+@media screen and (max-width: 300px) {
+    .container {
+        width: 3000px;
+        height: 280px;
+    }
+    .hospital,
+    .password {
+        font-size: 20px;
+    }
+}
