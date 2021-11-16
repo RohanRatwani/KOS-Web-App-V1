@@ -1,0 +1,15 @@
+.navbar{
+    position: relative; 
+    height: 70px;
+   } 
+   
+   .container{
+       display: top;
+       margin-top: 0;
+   }
+   
+   .d-inline-block{
+       display: top inline-block;
+   
+   }
+   

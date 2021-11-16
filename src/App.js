@@ -1,23 +1,33 @@
-import Sidebar from "./components/sidebar/Sidebar";
-import Topbar from "./components/topbar/Topbar";
+ import Sidebar from "./components/sidebar/Sidebar";
+ import Topbar from "./components/topbar/Topbar";
 import "./App.css";
 import Home from "./pages/home/Home";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
 import UserList from "./pages/userList/UserList";
 import User from "./pages/user/User";
-import NewUser from "./pages/newUser/NewUser";
+import NewPatient from "./pages/newPatient/NewPatient";
 import ProductList from "./pages/productList/ProductList";
 import Product from "./pages/product/Product";
 import NewProduct from "./pages/newProduct/NewProduct";
+import Login from "./pages/login/Login";
 
 function App() {
+  const loggedIn=false;
   return (
+
     <Router>
-      <Topbar />
-      <div className="container">
-        <Sidebar />
+      
+     
+      <Topbar /> 
+
+       <div className="container"> 
+         <Sidebar />  
         <Switch>
-          <Route exact path="/">
+        <Route exact path="/Login">
+             {loggedIn ? <Redirect to="/home" /> : <Login />} 
+          </Route>
+          
+          <Route exact path="/Home">
             <Home />
           </Route>
           <Route path="/users">
@@ -26,8 +36,8 @@ function App() {
           <Route path="/user/:userId">
             <User />
           </Route>
-          <Route path="/newUser">
-            <NewUser />
+          <Route path="/NewPatient">
+            <NewPatient />
           </Route>
           <Route path="/products">
             <ProductList />
@@ -39,9 +49,10 @@ function App() {
             <NewProduct />
           </Route>
         </Switch>
-      </div>
+      </div> 
     </Router>
   );
 }
 
 export default App;
+
