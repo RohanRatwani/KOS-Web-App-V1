@@ -15,19 +15,16 @@ import { Container } from 'react-bootstrap';
 
 export default function Login() {
     return (
-
-        <>
-       
-       
+       <>
         <Container className="c" >
         <Row className="row">
-            <Col xs={6} className="col1">
+            <Col className="col1">
                 <img className="lo" alt="logo" src={Picture} />
             </Col>
         </Row>
         <Row className="row">
 
-            <Col xs={6} className="cols">
+            <Col className="cols">
             <div className="log" style={{ position: "relative", }}>
             <div>
             <img className="logo" alt="logo" src={Logo} /> <br />
@@ -50,32 +47,33 @@ export default function Login() {
                 
 
                 <div className="btn-ctn">
-                    <Link to="/">
+                    <Link to="/home">
                         <button type="submit" className="btn ">
                             <strong>Login</strong>
                         </button>
                     </Link>
                 </div> 
-            
-                <p className="forgot-password1" style={{ float:"right"}}>
-                    <a href="/" className=" text-right">Create new account</a>
-                </p>
-                <br />
-                
-                <p className="forgot-password" style={{ float:"left"}}>
+                <p className="forgot-password">
                     <a href="/" className="text-left">Forgot Password?</a>
                 </p>
+                <p className="forgot-password1" >Don't have an account?
+                    <a href="/" className=" text-right">Sign in</a>
+                </p>
+                {/* style={{ float:"right"}} */}
+                <br />
                 
-    
+               
+                {/* style={{ float:"left"}} */}
             </div>
          </div> 
          </Col>
                 
-         
+         <footer>
+             <p>Copyright &copy; 2021 - KOS Technologies Ai</p>
+         </footer> 
          </Row>
-         </Container> 
-         </> 
-   
+        </Container>
+        </>
     )
 }
 
